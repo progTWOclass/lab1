@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Question4 {
+public class BiggestNumArray {
 
     public static int getLargest(int[] arr){
 

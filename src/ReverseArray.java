@@ -1,4 +1,4 @@
-public class Question5 {
+public class ReverseArray {
     public static void reverseArr(int[] arr){
 
         for(int i = 0; i<arr.length/2; i++){

@@ -1,4 +1,4 @@
-public class Question6 {
+public class CompareArray {
 
     //method to check if the array is the same length
     public static boolean checkIfSameLength(char[] arr1, char[] arr2){
@@ -12,7 +12,7 @@ public class Question6 {
         boolean sameArr = true;
 
         //outer loop tracks the element currently being processed
-        //it doesn't have to arr1 for i, it could be arr2 too
+        //it doesn't have to be arr1 for i, it could be arr2 too
         for(int i = 0; i < arr1.length; i++) {
             int frequencyElementArr1 = 0;
             // the inner loop Iterates through the arrays (array1 or array2)
@@ -29,7 +29,7 @@ public class Question6 {
                 if (arr1[i] == arr2[j])
                     frequencyElementArr2++;
             }
-            //if frequency is not equal, there are not the same
+            //if frequency is not equal, they are not the same
             if(frequencyElementArr1 != frequencyElementArr2) {
                 sameArr = false;
                 break;
@@ -40,7 +40,7 @@ public class Question6 {
     public static void main(String[] args) {
 
         char[] arr1 = {'a', 'b', 'c', 'd'};
-        char[] arr2 = {'b', 'd', 'a', 'c'};
+        char[] arr2 = {'b', 'c', 'a', 'c'};
 
         if(!checkIfSameLength(arr1,arr2)) {
             System.out.println("the array is not the same");
